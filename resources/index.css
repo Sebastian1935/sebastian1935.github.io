@@ -1,3 +1,76 @@
+* {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../resources/img/portada.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+*/
+
+nav {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 5.5em;
+    width: 100%;
+    background: transparent;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.codeBy {
+    margin-left: 2.5em;
+}
+
+.links {
+    margin-right: 2.5em;
+}
+
+.codeBy, .links {
+    font-size: large;
+}
+
 img {
     width: 100%;
 }
+
+body {
+    background-color: #000;
+}
+
+.name {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 10rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.information {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+}
+
+/*
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(0, 0, 0), white);
+    border-radius: 6px;
+}
+*/
