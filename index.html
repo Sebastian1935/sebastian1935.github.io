@@ -5,58 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../portfolioWebsite/resources/index.css">
-    <title>Sebastian Lopez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" async></script>
+    <title>Sebastian Lopez - Portfolio</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <p class="codeBy">Code by Sebastian</p>
+        <nav id="navigation">
+            <p class="codeBy" id="navA">Code by Sebastian</p>
             <div class="links">
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a style="color: #FFEAEA;" class="work" href="#" id="navB">Work</a>
+                <a style="color: #FFEAEA;" class="about" href="#" id="navC">About</a>
+                <a style="color: #FFEAEA;" class="contact" href="#" id="navD">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main> 
+    <!-- Portada y nombre -->
         <figure>
-            <img src="../portfolioWebsite/resources/img/portada recortada.svg" alt="Sebastian in westworld">
+            <img src="../portfolioWebsite/resources/img/portadaPrueba2.jpg" alt="Sebastian in westworld" id="portada">
         </figure>
-        
-        <h1 class="name">Sebastian Lopez</h1>
-        
-        <div class="information">
-            <article class="presentationMessage">
+        <h1 class="name" id="name">Sebastian Lopez</h1>
+
+        <main>
+            <article class="presentationMessage" id="message">
                 <p>Hello, World! I’m Sebastian Lopez, a mechatronic engineer and full-stack devoleper. Creating designs and experiences helping brands to stand out in the digital era.</p>
             </article>
-        
-            <article class="projects">
-                <h3>Projects</h3>
-                <table>
-                    <tr>
-                        <td>Development Folder</td>
-                    </tr>
-                    <tr>
-                        <td>Kaolin</td>
-                    </tr>
-                    <tr>
-                        <td>Panci Maker</td>
-                    </tr>
-                    <tr>
-                        <td>Tea Cozy</td>
-                    </tr>
-                </table>
-            </article>
-    
+
             <article class="passion">
                 <p>The combination of my passion for design, code & interaction positions me in a unique place in the web design world.</p>
             </article>
-    
-            <articlec class="button">
-                <a href="#">About me</a>
+
+            <article class="projects">
+                <h3>Projects</h3>
+                <ul id="list">
+                    <li id="developmentFolder">Off-Platform Project Dasmoto's Arts & Crafts
+                        <div id="dasmoto-div">
+                            <p>My first project using HTML and CSS.</p>
+                            <img src="../portfolioWebsite/resources/img/dashMotoProject.PNG" alt="Dashmoto website Homescreen">
+                        </div></li>
+                    <li id="kaolin">Kaolin 
+                        <div id="kaolin-div">
+                            <p>A pet-friendly website for a animal photograph studio.</p>
+                            <img src="../portfolioWebsite/resources/img/kaolinImage.PNG" alt="Homescreen of Kaolin's page"></li>
+                        </div>
+                    <li id="pancita">Panci Maker
+                        <div id="pancita-div">
+                            <p>Random generator of Pancitas, a little customizable cake.</p>
+                            <img src="../portfolioWebsite/resources/img/panciMakerHomeScreen.PNG" alt="Panci Maker website Homescreen">
+                        </div>
+                    </li>
+                    <li id="teaCozy">Tea Cozy
+                        <div id="teaCozy-div">
+                            <p>Multipurpose Tea Shop website</p>
+                            <img src="../portfolioWebsite/resources/img/teaCozy.PNG" alt="Tea Cozy website Homescreen">
+                        </div>
+                    </li>
+                </ul>
             </article>
-        </div>
+
+            <article class="button">
+
+                <a href="#" id="button">About me</a>
+            </article>
     </main>
 </body>
 </html>

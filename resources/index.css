@@ -1,40 +1,40 @@
-* {
-    color: #fff;
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: "poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap');
 }
 
-/*
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-image: url(../resources/img/portada.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    scroll-behavior: smooth;
 }
-*/
 
 nav {
     position: absolute;
     display: flex;
     top: 0;
     left: 0;
-    height: 5.5em;
+    height: 5.47rem;
     width: 100%;
     background: transparent;
     z-index: 5;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;  
+    color: #FFEAEA;
 }
 
 .codeBy {
-    margin-left: 2.5em;
+    margin-left: 2.5rem;
+    color: #FFEAEA;
 }
 
 .links {
-    margin-right: 2.5em;
+    margin-right: 2.5rem;
+}
+
+.work, .about, .contact {
+    margin-left: 2rem;
 }
 
 .codeBy, .links {
@@ -47,30 +47,194 @@ img {
 
 body {
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 .name {
+    font-family: "poppins";
     position: absolute;
     top: 30%;
-    left: 15%;
-    font-size: 10rem;
+    left: 11%;
+    font-size: 9rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #FFEAEA;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
-.information {
-    display: flex;
+main {
+    grid-gap: 5rem 7rem;
+    font-size: 2rem;
+    display: grid;
+    margin-bottom: 1rem;
+    padding-top: 60px;
+    width: min(95%, 80rem);
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+    color: #FFEAEA;
 }
 
+main article {
+    flex-grow: 1;
+}
+
+.presentationMessage {
+    max-width: 90%;
+    grid-column: span 2;
+    font-size: 2.06rem;
+}
+
+.passion {
+    padding-top: 0.31rem;
+    font-size: 1.06rem;
+    opacity: 80%;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.projects {
+    grid-row-start: 2;
+    font-size: 1.25rem;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    margin-bottom: 1.25rem;
+    padding: 0.625rem;
+    border-radius: 0.313rem;
+    color: #000;
+    background-color: #FFEAEA;
+}
+
+#dasmoto-div { 
+    display: none;
+}
+
+#developmentFolder:hover #dasmoto-div {
+    display: block;
+}
+
+#kaolin-div {
+    display: none;
+}
+
+#kaolin:hover #kaolin-div {
+    display: block;
+}
+
+#pancita-div {
+    display: none;
+}
+
+#pancita:hover #pancita-div {
+    display: block;
+}
+
+#teaCozy-div {
+    display: none;
+}
+
+#teaCozy:hover #teaCozy-div {
+    display: block;
+ }
+
+.button {
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 3;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+#button {
+    /* background-image: radial-gradient(circle, #ffeaea, #ffddd5, #ffd3b9, #ffcc9a, #ffc979, #f4d172, #e5da70, #d2e372, #b7ef9b, #a8f6c3, #abfbe3, #c0fcf9); */
+    /* background-image: radial-gradient(circle, #f77e21, #f56d2b, #f15c34, #eb4a3c, #e33844, #e63e42, #e94441, #ec4a3f, #f76932, #fd8724, #fea516, #fac213); */
+    padding: 5.125rem 3.125rem;
+    border-radius: 50%;
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    font-weight: 400;
+    background-image: radial-gradient(circle, #ffeaea, #f6cfd1, #ecb4ba, #e199a6, #d47e93, #cf7fa4, #c582b6, #b587c6, #9eaae8, #8fcaf7, #9ce5fa, #c0fcf9);
+    color: #FFEAEA;
+}
+
+#button:hover {
+    background-position: right;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+    .links, .codeBy {
+        display: none;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        top: 8%;
+        left: 11%;
+    }
+
+    main {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: 2.25%;
+        padding-block: 1rem;
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        justify-content: space-around;
+    }
+
+    .presentationMessage {
+        font-size: 2rem;
+        flex: 0 0 400px;
+        justify-items: center;
+    }
+
+    .passion {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        padding-left: 26%;
+        padding-right: 26%;
+        padding-block-start: 1.5rem;
+        padding-block-end: 5.5rem;
+    }
+
+    #button:active {
+        background-position: right;
+    }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape)  {
+    .name {
+        font-size: 5.5rem;
+        top: 34%;
+        left: 11%;
+    }
+}
+
+/* 
 ::-webkit-scrollbar {
     width: 0em;
-}
+} */
 
 /*
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(0, 0, 0), white);
     border-radius: 6px;
-}
-*/
+} */
+
